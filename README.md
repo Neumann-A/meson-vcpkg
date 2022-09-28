@@ -1,5 +1,5 @@
-Invoke with:
-meson --native-file <src_path>/meson-vcpkg.txt --wrap-mode nodownload <src_path>
+Invoke with:  
+`meson --native-file <src_path>/meson-vcpkg.txt --wrap-mode nodownload <src_path>`
 
 Will automatically invoke vcpkg to install dependencies listed in vcpkg.json
 
