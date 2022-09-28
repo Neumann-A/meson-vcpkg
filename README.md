@@ -30,5 +30,5 @@ Build targets in project: 1
 ```
 meson-log.txt will contain the installation information of vcpkg
 
-Just for me:
-G:\vcpkg_common\downloads\tools\python\python-3.10.5-x64\python  E:/vcpkg_folders/master_clean/installed/x64-windows/tools/meson/meson.py --native-file ../meson-vcpkg.txt --wrap-mode nodownload ../
+<!-- Just for me:  
+G:\vcpkg_common\downloads\tools\python\python-3.10.5-x64\python  E:/vcpkg_folders/master_clean/installed/x64-windows/tools/meson/meson.py --native-file ../meson-vcpkg.txt --wrap-mode nodownload ../ -->
