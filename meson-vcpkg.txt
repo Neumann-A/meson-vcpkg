@@ -1,0 +1,26 @@
+[constants]
+vcpkg_base_path = 'E:/vcpkg_folders/master_clean/'
+vcpkg_base_install_dir = 'E:/vcpkg_folders/meson_vcpkg/vcpkg_installed/'
+vcpkg_target_triplet = 'x64-windows'
+vcpkg_host_triplet = 'x64-windows'
+vcpkg_installed_dir =  vcpkg_base_install_dir + vcpkg_target_triplet + '/'
+vcpkg_host_installed_dir = vcpkg_base_install_dir + vcpkg_host_triplet + '/'
+vcpkg_toolchain_file =  vcpkg_base_path + 'scripts/toolchains/windows.cmake'
+
+[properties]
+cmake_toolchain_file = vcpkg_base_path + 'scripts/buildsystems/vcpkg.cmake'
+
+[binaries]
+vcpkg = [ vcpkg_base_path + 'vcpkg.exe']
+pkgconfig = [ vcpkg_installed_dir + 'tools/pkgconf/pkgconf.exe']
+
+[cmake]
+VCPKG_TARGET_TRIPLET = vcpkg_target_triplet
+VCPKG_HOST_TRIPLET = vcpkg_host_triplet
+VCPKG_CHAINLOAD_TOOLCHAIN_FILE = vcpkg_base_path + 'scripts/toolchains/windows.cmake'
+_VCPKG_INSTALLED_DIR = vcpkg_installed_dir
+VCPKG_CRT_LINKAGE = 'dynamic'
+
+[built-in options]
+pkg_config_path =  [ vcpkg_installed_dir + 'lib/pkgconfig;' + vcpkg_installed_dir + 'share/pkgconfig']
+cmake_prefix_path = [ vcpkg_installed_dir ]

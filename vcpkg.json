@@ -1,0 +1,11 @@
+{
+  "name": "meson-vcpkg",
+  "version": "1",
+  "description": "Testing meson and vcpkg integration together using manifest mode of vcpkg",
+  "dependencies": [
+    "zlib",
+    "fmt",
+    "double-conversion",
+    "pkgconf"
+  ]
+}
